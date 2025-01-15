@@ -4,10 +4,16 @@
   "private": false,
   "description": "Umami makes it easy to collect, analyze, and understand your website data — so you can focus on growth",
   "main": "dist/umami-sdk.js",
+  "module": "dist/umami-sdk.js",
+  "unpkg": "dist/umami-sdk.js",
+  "jsdelivr": "dist/umami-sdk.js",
+  "types": "types/src/index.d.ts",
   "files": [
     "dist",
-    "src",
-    "types"
+    "types/src",
+    "README.md",
+    "LICENSE",
+    "package.json"
   ],
   "scripts": {
     "docs:dev": "vuepress dev docs",
