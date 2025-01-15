@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: typescript-sdk-starter
+heroText: umami-sdk
 tagline: 从零开始搭建规范的 TypeScript SDK 项目
 
 # 配置首页按钮
@@ -9,7 +9,7 @@ actions:
     link: /guide/
     type: primary
   - text: Github地址
-    link: https://github.com/Yakima-Teng/typescript-sdk-starter
+    link: https://github.com/Yakima-Teng/umami-sdk
     type: secondary
 
 # 配置首页特效列表

@@ -18,7 +18,7 @@
 
 ## GitHub
 
-相关代码已经上传至 [GitHub仓库](https://github.com/nekobc1998923/typescript-sdk-starter) ，**有兴趣的小伙伴可以 star 一下**
+相关代码已经上传至 [GitHub仓库](https://github.com/nekobc1998923/umami-sdk) ，**有兴趣的小伙伴可以 star 一下**
 
 ## 项目初始化
 

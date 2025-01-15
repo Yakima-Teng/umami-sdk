@@ -11,7 +11,7 @@ export default defineUserConfig({
   // 站点配置
   title: packageJson.name,
   description: packageJson.description,
-  base:'/typescript-sdk-starter/docs/',
+  base:'/umami-sdk/docs/',
   // 主题和它的配置
   theme: defaultTheme({
     navbar:[
@@ -29,7 +29,7 @@ export default defineUserConfig({
       },
       {
         text: "GitHub",
-        link: "https://github.com/Yakima-Teng/typescript-sdk-starter",
+        link: "https://github.com/Yakima-Teng/umami-sdk",
       },
     ],
   }),

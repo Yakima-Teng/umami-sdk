@@ -5,7 +5,7 @@
 ## 初始化
 
 ```typescript
-import LibraryStarter from "typescript-sdk-starter";
+import LibraryStarter from "umami-sdk";
 const starter = new LibraryStarter({ id: 'GIQE-QWQE-VFFF', url: 'localhost' })
 starter.getConfig()
 ```
