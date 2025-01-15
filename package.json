@@ -3,6 +3,7 @@
   "version": "0.0.4",
   "private": false,
   "description": "Umami makes it easy to collect, analyze, and understand your website data — so you can focus on growth",
+  "type": "commonjs",
   "main": "dist/umami-sdk.js",
   "module": "dist/umami-sdk.js",
   "unpkg": "dist/umami-sdk.js",
