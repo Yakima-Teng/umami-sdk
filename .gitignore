@@ -1,0 +1,21 @@
+# npm包
+/node_modules
+
+# build产物
+dist
+/types
+
+# eslint
+.eslintcache
+
+# jest
+/coverage
+
+# cache缓存
+.cache
+
+# temp
+.temp
+
+# ignore folder for IDE: IDEA
+/.idea
