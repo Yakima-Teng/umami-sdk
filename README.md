@@ -6,7 +6,7 @@ This is a Typescript SDK for umami, using in browser.
 
 ## Before using
 
-**Before using this client sdk, please sure you have added your tracking code in your frontend project.** It is something like this:
+**Before using this client sdk, please ensure that you have added your tracking code in your frontend project.** It is something like this:
 
 ```html
 
@@ -22,6 +22,8 @@ This is a Typescript SDK for umami, using in browser.
 </body>
 </html>
 ```
+
+For more information, please refer to the [official documentation](https://umami.is/docs).
 
 ## How to use
 
