@@ -1,4 +1,16 @@
 # Changelog
+### [0.0.6](https://github.com/Yakima-Teng/umami-sdk/compare/v0.0.5...v0.0.6) (2025-01-15)
+
+
+### 🚀 Chore | 构建/工程依赖/工具
+
+* npm run publish will trigger husky twice ([e7c45b3](https://github.com/Yakima-Teng/umami-sdk/commit/e7c45b3dbd07cc519bccf832638d0f93b74e1676))
+
+
+### ✏️ Documentation | 文档
+
+* update README.md ([9c74eb2](https://github.com/Yakima-Teng/umami-sdk/commit/9c74eb287e063e576539f6e85d1a457fcc77b58e))
+
 ### 0.0.5 (2025-01-15)
 
 
