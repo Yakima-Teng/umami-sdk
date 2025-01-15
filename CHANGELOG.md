@@ -1,4 +1,11 @@
 # Changelog
+### [0.0.3](https://github.com/Yakima-Teng/umami-sdk/compare/v0.0.2...v0.0.3) (2025-01-15)
+
+
+### 🚀 Chore | 构建/工程依赖/工具
+
+* specify path to declaration files ([caf2fea](https://github.com/Yakima-Teng/umami-sdk/commit/caf2feaa9562e2ba394b632a6a7192558ce2a0cc))
+
 ### [0.0.2](https://github.com/Yakima-Teng/umami-sdk/compare/v0.0.1...v0.0.2) (2025-01-15)
 
 
