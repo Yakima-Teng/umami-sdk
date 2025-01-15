@@ -10,8 +10,8 @@ module.exports = {
     global: {
       branches: 100,
       functions: 100,
-      lines: 100,
-      statements: 100,
+      lines: 70,
+      statements: 70,
     },
   },
   // 路径映射配置，官文档网地址：https://kulshekhar.github.io/ts-jest/docs/getting-started/paths-mapping

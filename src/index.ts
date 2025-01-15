@@ -1,23 +1,45 @@
-interface ConfigOptions {
-  id: string;
-  url: string;
-}
-class LibraryStarter {
-  public id: string;
+import { TrackPayloadCallback } from '@/typing';
 
-  public url: string;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const win = globalThis as any;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const umami = win.umami as any;
 
-  constructor(options: ConfigOptions) {
-    this.id = options.id;
-    this.url = options.url;
+export const trackPayload = (payload?: Record<string, unknown> | TrackPayloadCallback): void => {
+  try {
+    const { track } = umami || {};
+    if (!track) {
+      return;
+    }
+    track(payload);
+  } catch (err: unknown) {
+    // eslint-disable-next-line no-console
+    console.error(err);
   }
+};
 
-  getConfig() {
-    return {
-      id: this.id,
-      url: this.url,
-    };
+export const trackEvent = (eventName: string, eventData: Record<string, unknown>): void => {
+  try {
+    const { track } = umami || {};
+    if (!track) {
+      return;
+    }
+    track(eventName, eventData);
+  } catch (err: unknown) {
+    // eslint-disable-next-line no-console
+    console.error(err);
   }
-}
+};
 
-export default LibraryStarter;
+export const identifySession = (sessionData: Record<string, unknown>): void => {
+  try {
+    const { identify } = umami || {};
+    if (!identify) {
+      return;
+    }
+    identify(sessionData);
+  } catch (err: unknown) {
+    // eslint-disable-next-line no-console
+    console.error(err);
+  }
+};

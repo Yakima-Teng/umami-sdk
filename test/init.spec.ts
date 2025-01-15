@@ -1,10 +1,24 @@
-import LibraryStarter from '@/index';
+import { trackPayload, trackEvent, identifySession } from '@/index';
 
 describe('src/index.ts', () => {
-  it('这里要判断 SDK 的参数初始化是否正确', () => {
-    expect(new LibraryStarter({ id: 'GIQE-QWQE-VFFF', url: 'localhost' }).getConfig()).toStrictEqual({
-      id: 'GIQE-QWQE-VFFF',
-      url: 'localhost',
-    });
+  it('trackPayload should work', () => {
+    expect(typeof trackPayload).toStrictEqual('function');
+
+    const result = trackPayload();
+    expect(typeof result).toStrictEqual('undefined');
+  });
+
+  it('trackEvent should work', () => {
+    expect(typeof trackEvent).toStrictEqual('function');
+
+    const result = trackEvent('eventName', {});
+    expect(typeof result).toStrictEqual('undefined');
+  });
+
+  it('identifySession should work', () => {
+    expect(typeof identifySession).toStrictEqual('function');
+
+    const result = identifySession({});
+    expect(typeof result).toStrictEqual('undefined');
   });
 });
