@@ -29,7 +29,7 @@
     "release-major": "standard-version --release-as major",
     "release-minor": "standard-version --release-as minor",
     "release-patch": "standard-version --release-as patch",
-    "publish": "npm publish --registry=https://registry.npmjs.org"
+    "deploy-npm": "npm publish --registry=https://registry.npmjs.org"
   },
   "repository": {
     "type": "git",
