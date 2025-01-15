@@ -18,7 +18,7 @@ export const trackPayload = (payload?: Record<string, unknown> | TrackPayloadCal
   }
 };
 
-export const trackEvent = (eventName: string, eventData: Record<string, unknown>): void => {
+export const trackEvent = (eventName: string, eventData?: Record<string, unknown>): void => {
   try {
     const { track } = umami || {};
     if (!track) {
@@ -42,4 +42,10 @@ export const identifySession = (sessionData: Record<string, unknown>): void => {
     // eslint-disable-next-line no-console
     console.error(err);
   }
+};
+
+export default {
+  trackPayload,
+  trackEvent,
+  identifySession,
 };
