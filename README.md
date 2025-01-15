@@ -1,13 +1,48 @@
 # umami-sdk
 
-> Umami makes it easy to collect, analyze, and understand your website data — so you can focus on growth
+> Umami is a simple, fast, privacy-focused alternative to Google Analytics.
+
+This is a Typescript SDK for umami, using in browser.
+
+## Before using
+
+**Before using this client sdk, please sure you have added your tracking code in your frontend project.** It is something like this:
+
+```html
+
+<html lang="en">
+<head>
+  <title>umami.js</title>
+  <!-- ... -->
+  <script async defer data-website-id="<your-website-id>" src="<https://your-website.com>/umami.js"></script>
+  <!-- ... -->
+</head>
+<body>
+<!-- ... -->
+</body>
+</html>
+```
 
 ## How to use
 
+First, install the package:
+
+```bash
+npm install -S umami-sdk
+```
+
+Then you can use it like this:
+
 ```typescript
-import umami from 'umami-sdk'
+import { trackEvent } from 'umami-sdk'
+
+// just report a custom event name
+trackEvent('header-login-button')
+
+// or together with some event data
+trackEvent('header-login-button', { hello: 'world' })
 ```
 
 ## License
 
-MIT.
+[MIT](./LICENSE).

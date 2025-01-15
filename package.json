@@ -2,7 +2,7 @@
   "name": "umami-sdk",
   "version": "0.0.5",
   "private": false,
-  "description": "Umami makes it easy to collect, analyze, and understand your website data — so you can focus on growth",
+  "description": "Umami is a simple, fast, privacy-focused alternative to Google Analytics.",
   "type": "commonjs",
   "main": "dist/umami-sdk.js",
   "module": "dist/umami-sdk.js",
@@ -36,17 +36,12 @@
     "url": "git+https://github.com/Yakima-Teng/umami-sdk.git"
   },
   "keywords": [
+    "umami",
+    "umami.js",
+    "umami sdk",
+    "umami-sdk",
     "typescript",
-    "sdk",
-    "starter",
-    "webpack",
-    "editorconfig",
-    "prettier",
-    "eslint",
-    "husky",
-    "lint-staged",
-    "standard-version",
-    "jest"
+    "sdk"
   ],
   "author": "Yakima",
   "license": "MIT",
