@@ -1,4 +1,11 @@
 # Changelog
+### [0.0.4](https://github.com/Yakima-Teng/umami-sdk/compare/v0.0.3...v0.0.4) (2025-01-15)
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* eventData is optional ([40d27dc](https://github.com/Yakima-Teng/umami-sdk/commit/40d27dc66d6409cda65a9e192ca8695951c5eb03))
+
 ### [0.0.3](https://github.com/Yakima-Teng/umami-sdk/compare/v0.0.2...v0.0.3) (2025-01-15)
 
 
