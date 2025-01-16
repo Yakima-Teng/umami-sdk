@@ -1,5 +1,9 @@
 # umami-sdk
 
+<p align="center">
+  <img src="./public/logo.svg" alt="logo">
+</p>
+
 > Umami is a simple, fast, privacy-focused alternative to Google Analytics.
 
 This is a Typescript SDK for umami, using in browser.
