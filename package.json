@@ -1,6 +1,6 @@
 {
   "name": "umami-sdk",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "private": false,
   "description": "Umami is a simple, fast, privacy-focused alternative to Google Analytics.",
   "type": "commonjs",
