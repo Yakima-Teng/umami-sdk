@@ -18,7 +18,7 @@ This is a browser client SDK for umami, writing in Typescript.
 <head>
   <title>umami.js</title>
   <!-- ... -->
-  <script async defer data-website-id="<your-website-id>" src="<https://your-website.com>/umami.js"></script>
+  <script async defer data-website-id="<your-website-id>" data-auto-track="false" src="https://cloud.umami.is/script.js"></script>
   <!-- ... -->
 </head>
 <body>
@@ -37,16 +37,48 @@ First, install the package:
 npm install -S umami-sdk
 ```
 
-Then you can use it like this:
+Then you can use it as specified below.
+
+### trackEvent
 
 ```typescript
-import { trackEvent } from 'umami-sdk'
+import * as umami from 'umami-sdk'
 
 // just report a custom event name
-trackEvent('header-login-button')
+umami.trackEvent('header-login-button')
 
 // or together with some event data
-trackEvent('header-login-button', { hello: 'world' })
+umami.trackEvent('header-login-button', { hello: 'world' })
+```
+
+### trackPayload
+
+```typescript
+import * as umami from 'umami-sdk'
+
+// if you want to track pageview, just pass an empty object
+umami.trackPayload({})
+
+// if you want to customize the payload default value, you can pass a callback
+umami.trackPayload((props) => {
+    return {
+        ...props,
+    }
+})
+
+// actually, trackEvent is a sugar for trackPayload
+umami.trackPayload({
+  name: 'event-name',
+  data: { /* event data */ }
+})
+```
+
+### identifySession
+
+```typescript
+import * as umami from 'umami-sdk'
+
+umami.identifySession({ email: 'bob@aol.com' })
 ```
 
 ## License
