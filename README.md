@@ -51,6 +51,17 @@ umami.trackEvent('header-login-button')
 umami.trackEvent('header-login-button', { hello: 'world' })
 ```
 
+### aopTrackEvent
+
+```typescript
+// 采用 AOP 的方式来封装一个高阶函数，避免手动到处在函数里添加 trackEvent 代码，实现优雅的埋点
+import * as umami from "umami-sdk";
+const add = (a: number, b: number) => a + b
+
+// this will call add(1, 2), and report event of `event-name` with optional event data
+umami.aopTrackEvent('event-name', add, { /* 可选的 event data */ })(1, 2)
+```
+
 ### trackPayload
 
 ```typescript

@@ -31,6 +31,19 @@ export const trackEvent = (eventName: string, eventData?: Record<string, unknown
   }
 };
 
+// 采用 AOP 的方式来封装一个高阶函数，避免手动到处在函数里添加 doTrackEvent 代码来实现优雅的埋点
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const aopTrackEvent = <T extends (...args: any[]) => any>(
+  eventName: string,
+  fn: T,
+  eventData?: Record<string, unknown>,
+) => {
+  return ((...args: Parameters<T>) => {
+    trackEvent(eventName, eventData);
+    return fn(...args);
+  }) as T;
+};
+
 export const identifySession = (sessionData: Record<string, unknown>): void => {
   try {
     const { identify } = umami || {};
@@ -47,5 +60,6 @@ export const identifySession = (sessionData: Record<string, unknown>): void => {
 export default {
   trackPayload,
   trackEvent,
+  aopTrackEvent,
   identifySession,
 };
